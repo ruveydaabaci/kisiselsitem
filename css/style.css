@@ -326,3 +326,77 @@ body {
 .social-links a:hover {
   color: #aaa;
 }
+
+
+
+
+  /* Mobil Uyumluluk */
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  /* Genel bölümler */
+  .about-section,
+  .certificates-section,
+  .projects-section,
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  /* Hakkımda blokları */
+  .about-block {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-image img {
+    width: 280px;
+    height: 280px;
+  }
+
+  /* Sertifika ve proje kartları */
+  .certificates-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .certificate-card {
+    width: 100%;
+  }
+
+  /* Sosyal bağlantılar */
+  .social-links {
+    font-size: 1rem;
+  }
+
+  /* Hero kısmı (Ana Sayfa) */
+  .hero-row {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-row img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
