@@ -413,3 +413,10 @@ body {
   border-top: 1px solid #333;
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+  font-size: 14px;
+}
+
