@@ -330,6 +330,8 @@ body {
 
 
 
+
+
   /* Mobil Uyumluluk */
 @media screen and (max-width: 768px) {
   /* Navbar */
@@ -398,5 +400,16 @@ body {
     width: 200px;
     height: 200px;
   }
+}
+
+
+.site-footer {
+  background-color: #1a1a1a;
+  color: #888;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 60px;
+  border-top: 1px solid #333;
 }
 
