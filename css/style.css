@@ -357,20 +357,47 @@ body {
   }
 
   /* Hakkımda blokları */
-  .about-block {
-    flex-direction: column;
-    padding: 0;
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.about-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+  .about-block,
+  .about-block.reverse {
+    flex-direction: column !important;
     text-align: center;
   }
 
+  .about-image,
   .about-text {
-    max-width: 100%;
+    width: 100%;
   }
 
-  .about-image img {
-    width: 280px;
-    height: 280px;
+  .about-text {
+    padding: 0 10px;
   }
+}
 
   /* Sertifika ve proje kartları */
   .certificates-grid,
@@ -403,13 +430,20 @@ body {
 }
 
 
-.footer {
-  width: 100%;
-  padding: 20px;
+footer {
   background-color: #121212;
   color: #ccc;
   text-align: center;
+  padding: 20px 0;
   font-size: 0.9rem;
   position: relative;
   bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.8rem;
+    padding: 15px 10px;
+  }
 }
